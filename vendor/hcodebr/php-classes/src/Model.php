@@ -13,8 +13,8 @@ class Model{
 
 		switch ($method) {
 			case 'get':
-					return (isset($this -> values[$fieldName])) ? $this -> values[$fieldName] : NULl;
-				exit;
+					return (isset($this->values[$fieldName])) ? $this->values[$fieldName] : NULl;
+			break;
 			
 			case 'set':
 					$this -> values[$fieldName] = $args[0];
@@ -35,7 +35,7 @@ class Model{
 
 	public function getValues()
 	{
-		return $this ->values;
+		return $this->values;
 	}
 }
 
